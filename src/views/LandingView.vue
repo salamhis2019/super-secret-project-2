@@ -14,7 +14,9 @@
 .home-view {
   height: 100%;
   margin: 0 auto;
-  background: #ece2d0 .start-button {
+  background: #ece2d0;
+
+  .start-button {
     background: white;
     padding: 1rem 2rem;
     font-size: 24px;
