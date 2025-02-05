@@ -5,4 +5,6 @@ body {
   margin: 0;
   height: 100%;
   font-family: sans-serif;
+  background: #ece2d0;
+  background-image: url('https://www.transparenttextures.com/patterns/arches.png');
 }
