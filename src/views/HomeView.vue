@@ -1,6 +1,6 @@
 <template>
   <div class="home-view">
-    <h2>Question 1:</h2>
+    <h2>Question 4:</h2>
     <h1><span class="name">Whitney Gilley</span>, will you be my valentine?</h1>
 
     <div class="darth-container">
@@ -42,6 +42,7 @@
 import { ref } from 'vue'
 import { NO_STATES_INFO } from '@/constants/landing.const'
 import router from '@/router'
+import YesScreen from '@/views/YesScreen.vue'
 
 // state
 const MAX_OVERLAY_COUNT = 4
@@ -80,7 +81,7 @@ function onNoButtonHover() {
 
   setTimeout(() => {
     showOverlay.value = false
-  }, 1500)
+  }, 2000)
 }
 
 function onYesButtonClick() {
@@ -94,7 +95,7 @@ function onYesButtonClick() {
     return
   }
 
-  router.push({ name: 'YesScreen' })
+  router.push({ name: 'yes-screen' })
 }
 </script>
 

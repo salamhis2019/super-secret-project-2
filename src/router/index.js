@@ -4,6 +4,8 @@ import QuestionOne from '../views/QuestionOne.vue'
 import QuestionTwo from '../views/QuestionTwo.vue'
 import QuestionThree from '../views/QuestionThree.vue'
 import HomeView from '@/views/HomeView.vue'
+import YesScreen from '@/views/YesScreen.vue'
+import RewardView from '@/views/RewardView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -36,6 +38,18 @@ const router = createRouter({
       path: '/question3',
       name: 'question3',
       component: QuestionThree,
+      meta: { transition: 'fade' },
+    },
+    {
+      path: '/yes-screen',
+      name: 'yes-screen',
+      component: YesScreen,
+      meta: { transition: 'fade' },
+    },
+    {
+      path: '/reward',
+      name: 'reward',
+      component: RewardView,
       meta: { transition: 'fade' },
     },
   ],
